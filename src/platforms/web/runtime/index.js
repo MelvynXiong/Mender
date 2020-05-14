@@ -1,1 +1,3 @@
-export default 3;
+import Mender from "core";
+
+export default Mender;

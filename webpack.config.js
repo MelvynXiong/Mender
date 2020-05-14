@@ -1,4 +1,4 @@
-var path = require("path");
+const path = require("path");
 
 module.exports = {
   mode: "development",
@@ -6,6 +6,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "mender.js",
+  },
+  resolve: {
+    alias: {
+      core: path.resolve(__dirname, "src/core/"),
+    },
   },
   module: {
     rules: [
